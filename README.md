@@ -12,7 +12,7 @@ A custom-trained **YOLOv8 object detection system** that identifies PC hardware 
 
 ---
 
-## 📸 Demo
+## Demo
 
 > Upload any PC hardware image or use your webcam — the model returns annotated bounding boxes, confidence scores per detection, and a component count summary.
 
@@ -20,21 +20,21 @@ A custom-trained **YOLOv8 object detection system** that identifies PC hardware 
 
 ---
 
-## ✨ Features
+## Features
 
 - Detects **5 PC hardware classes**: GPU, CPU, RAM, SSD, HDD
-- Returns **per-detection confidence scores** (e.g. RAM: 94.2%, SSD: 98.1%)
+- Returns **per detection confidence scores** (e.g. RAM: 94.2%, SSD: 98.1%)
 - Shows **total component count** per class
 - Supports both **image upload and live webcam** input
-- Real-time inference via a clean **Gradio web interface**
+- Real time inference via a clean **Gradio web interface**
 - Trained via **transfer learning** on YOLOv8 pretrained weights
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### Model
-- **Architecture:** YOLOv8 (Ultralytics) — single-stage detector that predicts bounding boxes and class probabilities in one forward pass
+- **Architecture:** YOLOv8 (Ultralytics)  single stage detector that predicts bounding boxes and class probabilities in one forward pass
 - **Training method:** Transfer learning from YOLOv8 pretrained weights, fine-tuned on a custom PC hardware dataset
 - **Dataset:** 4,000 images across 5 classes sourced from Kaggle, trained on Google Colab with T4 GPU
 - **Classes:** `GPU` `CPU` `RAM` `SSD` `HDD`
@@ -53,11 +53,11 @@ Gradio UI → annotated image + structured analysis panel
 ```
 
 ### Why YOLOv8?
-YOLO (You Only Look Once) processes the entire image in a single forward pass rather than proposing regions first, making it significantly faster than two-stage detectors like Faster R-CNN — ideal for real-time hardware detection.
+YOLO (You Only Look Once) processes the entire image in a single forward pass rather than proposing regions first, making it significantly faster than two stage detectors like Faster R-CNN , ideal for real-time hardware detection.
 
 ---
 
-## 📊 Results
+## Results
 
 | Metric | Value |
 |--------|-------|
